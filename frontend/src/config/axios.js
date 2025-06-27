@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 // Set base URL for all axios requests
-axios.defaults.baseURL = 'http://localhost:5000';
+// Use environment variable for production, fallback to localhost for development
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = API_BASE_URL;
 
 // Add request interceptor to handle errors globally
 axios.interceptors.response.use(
