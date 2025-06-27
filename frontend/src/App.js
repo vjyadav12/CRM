@@ -12,6 +12,7 @@ import { AuthProvider } from './context/AuthContext';
 import EmployeeDetails from './pages/EmployeeDetails';
 
 const App = () => {
+  // wellcome to root folder 
   return (
     <AuthProvider>
       <Box sx={{ display: 'flex' }}>
