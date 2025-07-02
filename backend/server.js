@@ -20,6 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/CRM5', {
 mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://infotechgautam544:eBEnOcS6Bo0HgAbt@cluster0.v4evidm.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
